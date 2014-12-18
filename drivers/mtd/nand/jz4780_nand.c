@@ -31,11 +31,11 @@
 #define OFFSET_ADDR 0x00800000
 
 static struct nand_ecclayout jz4780_nand_ecclayout = {
-	.eccbytes = 336,
+	.eccbytes = 168,
 	.eccpos = CONFIG_SYS_NAND_ECCPOS,
-	.oobavail = CONFIG_SYS_NAND_OOBSIZE - 338,
+	.oobavail = CONFIG_SYS_NAND_OOBSIZE - 170,
 	.oobfree = {
-		{ .offset = 2, .length = CONFIG_SYS_NAND_OOBSIZE - 338 },
+		{ .offset = 2, .length = CONFIG_SYS_NAND_OOBSIZE - 170 },
 	},
 };
 
